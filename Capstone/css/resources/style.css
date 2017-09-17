@@ -1,0 +1,566 @@
+html {
+  	font-family: 'Nunito Sans', sans-serif;
+  	font-size: 16px;
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	position: fixed;
+	margin: 0 auto;
+	width: 100%;
+	background-color: white;
+	z-index: 100;
+}
+
+.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 949px) {
+	.desktop {
+		display: none;
+	}
+	div #logo {
+		display: none;
+	}
+	.mobile {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		height: 4em;
+	}
+	.mobile ul {
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+	}
+	.mobile a {
+		text-decoration: none;
+		padding: 0;
+		width: 1em;
+		height: auto;
+	}
+}
+
+#content {
+	display: flex;
+	align-items: center;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	justify-content: space-between;
+	height: 4em;
+
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+}
+
+#logo a {
+	text-decoration: none;
+	font-size: 2em;
+
+}
+
+#logo img {
+	height: 4.25em;
+}
+
+header nav ul {
+	display: flex;
+}
+
+nav li {
+	list-style-type: none;
+	padding-left: 1.5em;
+}
+
+nav li a {
+	text-decoration: none;
+	color: black;
+}
+
+#jumbotron {
+	position: relative;
+	background-color: #D3D3D3;
+	top: 4em;
+	display: flex;
+	align-items: center;
+	padding: 2em 1.5em;
+
+}
+
+#jumbotext {
+	flex-direction: column;
+	padding-right: 10em;
+	font-family: 'Muli', sans-serif;
+	color: #484848;
+}
+
+#jumbotron img {
+	width: 60%;
+	margin-right: 1.5em;
+}
+
+#jumbotron h2{
+	font-size: 4em;
+	font-weight: 900;
+}
+
+#jumbotron span {
+	font-size: 2.2em;
+}
+
+#jumbotron .button {
+	margin-top: 2em;
+	display: block;
+	width: 10em;
+	padding: 0.5em;
+	background-color: #484848;
+	color: white;
+	text-decoration: none;
+	font-size: 1.7em;
+	letter-spacing: 0.1em;
+	font-weight: 100;
+	text-align: center;
+	width: 91%;
+}
+
+@media only screen and (max-width: 949px) {
+	#jumbotron {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		position: relative;
+		top: 4em;
+		padding: 0;
+	}
+	#jumbotron img {
+		width: 100%;
+		margin: 0;
+	}
+	#jumbotext {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	#jumbotron h2 {
+		margin: auto;
+		padding: 2rem 0 2rem 0;
+		font-size: 2em;
+	}
+	#jumbotron span {
+		font-size: 1em;
+	}
+	#jumbotron .button{
+		margin: 1.5em 0 2em 0;
+		width: auto;
+	}
+	#information div #inforight {
+		width: 100%;
+	}
+}
+
+#information {
+	position: relative;
+	top: 4em;
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	justify-content: space-between;
+}
+
+#infoleft {
+	width: 60%;
+	padding: 2em 1.5em;
+	color: #484848;
+
+}
+
+#infoleft img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#infoleft p {
+	margin: auto;
+}
+
+#information h2 {
+ 	font-size: 4em;
+ 	font-weight: 900;
+ 	padding-top: 2rem;
+ 	padding-bottom: 1.5rem;
+ }
+
+#information p, #information a {
+	font-size: 1.5em;
+}
+
+#quoteauthor {
+	padding-top: 2em;
+}
+
+#inforight {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 40%;
+	border-left: thin solid #D3D3D3;
+	padding: 2em 0 2em 0;
+}
+
+.infofeature, .ex1, .ex2{
+	display: flex;
+	align-items: center;
+	font-family: 'Muli', sans-serif;
+	width: 100%;
+	border-bottom: thin solid #D3D3D3;
+}
+
+.infofeature .desktop, #thesisright img{
+	padding-left: 1em; 
+	padding-right: 1em;
+	padding-bottom: 1em;
+	height: auto;
+	width: 35%;
+}
+
+#inforight .infofeaturetext, #thesistext{
+	flex-direction: column;
+	color: #484848;
+	width: 65%;
+	line-height: 1.5em;
+	color: #484848;
+
+}
+
+.infofeaturetext h3, #thesistext h3 {
+	font-size: 2.5em;
+	line-height: 1em;
+	font-weight: 900;
+	margin: auto;
+}
+
+.infofeaturetext p {
+	font-weight: 100;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.infofeaturetext a {
+	text-decoration: none;
+}
+
+.infofeature2{
+	display: flex;
+	align-items: center;
+	font-family: 'Muli', sans-serif;
+	width: 100%;
+	border-bottom: thin solid #D3D3D3;
+	border-top: thin solid #D3D3D3;
+	position: relative;
+	top: 0.2em;
+}
+
+.infofeature2 img, .infofeature3 img {
+	padding: 1em;
+	width: 35%;
+}
+
+.infofeature3{
+	display: flex;
+	align-items: center;
+	font-family: 'Muli', sans-serif;
+	width: 100%;
+	border-top: thin solid #D3D3D3;
+	background-color: #D3D3D3;
+}
+
+.mobileimg {
+	display: none;
+}
+
+
+@media only screen and (max-width: 949px) {
+
+	#information {
+		justify-content: center;
+	}
+
+	#infoleft {
+		display: none;
+	}
+
+	#inforight {
+		padding: 0;
+		border: none;
+		width: auto;
+	}
+
+	.infofeature, .infofeature2, .infofeature3{
+		background-color: white;
+		display: block;
+		border: none;
+	}
+
+
+	.infofeature .mobileimg, .infofeature2 .mobileimgdiv .mobileimg, .infofeature3 .mobileimg{
+		display: block;
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+		padding: 0;
+	}
+
+	.infofeaturetext {
+		padding-left: 1em;
+		margin-bottom: 3em;
+	}
+
+	.infofeature3 .infofeaturetext{
+		margin-bottom: 2em;
+	}
+
+	.infofeaturetext h3, .infofeaturetext p, .infofeaturetext a{
+		font-size: 1.5em;
+		margin: 0.5rem;
+
+	}
+
+	.mobileimgdiv{
+		margin: 1em;
+		justify-content: center;
+	}
+	
+}
+
+#courses {
+	background-color: #D3D3D3;
+	padding: 2em 4.5em;
+	position: relative;
+	font-family: 'Muli', sans-serif;
+	top: 4em;
+	color: #484848;
+}
+
+#courses h2 {
+ 	font-size: 4em;
+ 	font-weight: 900;
+ 	margin: auto;
+ 	text-align: center;
+ }
+
+ #tiles {
+ 	display: flex;
+ 	flex-flow: wrap;
+ 	flex-direction: row;
+	justify-content: space-between;
+	max-width: 100%;
+ }
+
+.desktoptile .description {
+	padding: 1em;
+}
+
+.desktoptile img {
+	height: auto;
+	max-width: 100%;
+}
+
+.desktoptile {
+	background-color: white;
+	/*margin-right: 2em;*/
+	margin-top: 2em;
+	width: 30%;
+}
+
+.desktoptile h3 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin: auto;
+	font-weight: 800;
+	font-size: 2.5em;
+}
+
+.desktoptile span {
+	display: inline-block;
+	padding-bottom: 0.5em;
+	font-size: 1.2em;
+}
+
+.desktoptile p {
+	padding-bottom: 1.5em;
+	font-size: 1.2em;
+	margin: auto;
+}
+
+.mobiletile {
+	display: none;
+}
+
+@media only screen and (max-width: 949px) {
+	
+	.desktoptile {
+		display: none;
+	}
+
+	#tiles {
+		flex-direction: column;
+	}
+
+	#courses h2 {
+		padding-bottom: 0.5rem;
+		font-size: 2em;
+	}
+
+	#courses {
+		display: block;
+		background-color: white;
+		border-top: thin solid #D3D3D3;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.mobiletile {
+		margin-top: 0.5rem;
+		padding: 1rem 1rem 1.5rem 1rem;
+		background-color: #D3D3D3;
+		font-size: 1.2rem;
+		display: block;
+	}
+	.mobiletile h3 {
+		margin: 0;
+		letter-spacing: 0.05em;
+	}
+}
+
+#thesis {
+	background-color: #F0F0F0;
+	font-family: 'Muli', sans-serif;
+	color: #484848;
+	position: relative;
+	top: 4em;
+	padding-left: 1.5em;
+	width: 100%;
+	padding-bottom: 2em;
+	border-bottom: thin solid #D3D3D3;;
+
+}
+
+#thesis h2 {
+ 	font-size: 4em;
+ 	font-weight: 900;
+ 	padding-top: 2rem;
+ 	padding-bottom: 2rem;
+ 	margin: auto;
+ 	text-align: center;
+ }
+
+ #thesiscontainer {
+ 	display: flex;
+	justify-content: space-between;
+	width: 100%;
+ }
+
+#thesisleft {
+	width: 60%;
+	padding-right: 1.5em;
+}
+
+#thesisleft video {
+	width: 100%;
+	padding-bottom: 1.5em;
+}
+
+#thesisleft h3 {
+	margin: auto;
+	font-weight: 800;
+	font-size: 2.5em;
+	padding-bottom: 0.5rem;	
+}
+
+#thesisleft p {
+	margin: auto;
+	font-size: 1.2em;
+	padding-bottom: 2rem;
+}
+
+#thesisright {
+	width: 40%;
+}
+
+#thesisright img {
+	width: 35%;
+	height: auto;
+}
+
+.ex1 {
+	background-color: #D3D3D3;
+	padding-top: 1em;
+}
+
+#thesisright p {
+	font-size: 1.5em;
+}
+
+.ex2 {
+	padding-top: 1em;	
+}
+
+@media only screen and (max-width: 949px) {
+	#thesis {
+		background-color: white;
+		padding-left: 0;
+		padding-bottom: 0;
+		border-top: thin solid #D3D3D3;
+	}
+
+	#thesis h2 {
+		font-size: 2em;
+		padding-bottom: 1rem;
+	}
+
+	#thesisright, #thesisleft h3, #thesisleft p{
+		display: none;
+	}
+
+	#thesisleft {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+footer .content {
+	position: relative;
+	top: 4rem;
+	padding: 1rem 1.5rem;
+	background-color: white;
+	font-family: 'Muli', sans-serif;
+	color: #484848;
+	display: flex;
+	font-size: .75rem;
+}
+
+footer .copyright {
+	flex-grow: 1;
+}
+
+footer a {
+	text-decoration: none;
+	padding-left: 2em;
+}
+
+@media only screen and (max-width: 949px) {
+
+	footer a {
+		display: none;
+	}
+
+}
